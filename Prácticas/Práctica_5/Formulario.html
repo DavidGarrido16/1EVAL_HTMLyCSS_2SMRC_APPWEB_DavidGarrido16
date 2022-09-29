@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+        <link rel="icon" type="image/x-icon" href="/Aplicaciones_Web/Prácticas/Práctica_5/images/formulario.ico">
+    </head>
+
+    <body style="background-color: rgb(255, 244, 143); text-align: center">
+        <h1>Formulario Personal</h1>
+        <form action="formulario.php" method="get">
+            <p>Nombre Completo:
+                <input type="text" placeholder="Escriba su nombre completo" required>
+            </p>
+            <p>Fecha de Nacimiento:
+                <input type="date" name="fecha">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="hm" value="h">Hombre
+                <input type="radio" name="hm" value="m">Mujer
+            </p>
+            <p>Idiomas:
+                <input type="checkbox" name="Idioma1" value="Inglés">Inglés
+                <input type="checkbox" name="Idioma2" value="Francés">Francés
+                <input type="checkbox" name="Idioma3" value="Alemán">Alemán
+                <input type="checkbox" name="Idioma4" value="Inglés">Catalán
+            </p>
+            <p>En caso, de saber inglés, indique su nivel:
+                <input type="range" name="rango" list="rango-inglés" min="1" max="3">
+                <datalist id="rango-inglés">
+                    <option value="1" label="malo">
+                    <option value="2" label="regular">
+                    <option value="3" label="bueno">
+                </datalist>
+            </p>
+            <p>Estado civil:
+                <select name="menu">
+                    <option value="1">...</option>
+                    <option value="2">Soltero/a</option>
+                    <option value="3">Casado/a</option>
+                    <option value="4">Viudo/a</option>
+                    <option value="5">Prefiere no contestar</option>
+                </select> 
+            </p>
+            <p>
+                Describe tu personalidad brevemente:<br>
+                <textarea rows="6" cols="30"></textarea>
+            </p>
+        </form>
+    </body>
+</html>
