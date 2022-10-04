@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+        <link rel="icon" type="image/x-icon" href="images/formulario.ico">
+    </head>
+
+    <body style="background-color: rgb(255, 244, 143); text-align: center">
+        <h1>Formulario Personal</h1>
+        <form action="formulario.php" method="get">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <p>Nombre Completo:
+                    <input type="text" placeholder="Escriba su nombre completo" required>
+                </p>
+                <p>Fecha de Nacimiento:
+                    <input type="date" name="fecha" required>
+                </p>
+                <p>Sexo:
+                    <input type="radio" name="hm" value="h">Hombre
+                    <input type="radio" name="hm" value="m">Mujer
+                </p>
+                <p>Estado civil:
+                    <select name="menu">
+                        <option value="1">...</option>
+                        <option value="2">Soltero/a</option>
+                        <option value="3">Casado/a</option>
+                        <option value="4">Viudo/a</option>
+                        <option value="5">Prefiere no contestar</option>
+                    </select> 
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Datos Académicos</legend>
+                <p>Que títulos posees:
+                    <input type="checkbox" name="Título1" value="Secundaria">Secundaria
+                    <input type="checkbox" name="Título2" value="Bachillerato">Bachillerato
+                    <input type="checkbox" name="Título3" value="Técnico de Grado Medio">Técnico de Grado Medio
+                    <input type="checkbox" name="Título4" value="Técnico de Grado Superior">Técnico de Grado Superior
+                    <input type="checkbox" name="Título5" value="Universitario">Universitario
+                </p>
+                <p>Idiomas:
+                    <input type="checkbox" name="Idioma1" value="Inglés">Inglés
+                    <input type="checkbox" name="Idioma2" value="Francés">Francés
+                    <input type="checkbox" name="Idioma3" value="Alemán">Alemán
+                    <input type="checkbox" name="Idioma4" value="Inglés">Catalán
+                    <input type="checkbox" name="Idioma5" value="Otro">Otro <input type="text" placeholder="Escriba otro idioma">
+                </p>
+                <p>En caso, de saber inglés, indique su nivel:
+                    <input type="range" name="rango" list="rango-inglés" min="1" max="3">
+                    <datalist id="rango-inglés">
+                        <option value="1" label="malo">
+                        <option value="2" label="regular">
+                        <option value="3" label="bueno">
+                    </datalist>
+                </p>
+                <p>
+                    Describe tus habilidades brevemente:<br>
+                    <textarea rows="6" cols="30"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+            </fieldset>
+        </form>
+    </body>
+</html>
