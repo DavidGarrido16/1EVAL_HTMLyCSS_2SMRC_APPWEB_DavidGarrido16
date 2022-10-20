@@ -1,0 +1,16 @@
+li {
+    list-style: none;
+    display: inline;
+}
+header {
+    height: 20%;
+    background-color: aquamarine;
+}
+nav {
+    height: 60%;
+    background-color: lightgreen;
+}
+footer {
+    height: 20%;
+    background-color: greenyellow;
+}
