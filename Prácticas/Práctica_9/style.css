@@ -1,0 +1,23 @@
+html{
+    border: green solid 3px;
+}
+body{
+    margin: 0px 3px;
+    border-style: solid;
+    border-color: aquamarine;
+    background-color: coral;
+}
+h1{
+    border-style: groove;
+    border-width: 8px;
+    border-color: blueviolet;
+    background-color: aliceblue;
+    color: blue;
+}
+p{
+    border: solid 1rem rgb(122, 241, 232);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 20px;
+    padding: 30px 5px;
+    width: 25%;
+}

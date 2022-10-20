@@ -1,0 +1,13 @@
+/*Autor - David Garrido*/
+span.especial1 {
+    color: chartreuse;
+}
+span.especial2 {
+    color: brown;
+}
+hr {
+    width: 30%;
+    height: 8px;
+    background-color: aqua;
+    border: 2px red solid;
+}
