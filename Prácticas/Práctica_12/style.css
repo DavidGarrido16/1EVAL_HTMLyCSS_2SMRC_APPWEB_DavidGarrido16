@@ -1,0 +1,42 @@
+main pre:first-child{
+    color: red;
+}
+a:link{
+    color: orange;
+    background-color: black;
+}    
+a:visited{
+    color: whitesmoke;
+    background-color: blue;
+}
+a:hover{
+    color: crimson;
+    background-color: chartreuse;
+}
+p.parrafo2:hover{
+    background-color: greenyellow;
+    color: white;
+}
+a:active{
+    font-size: xx-large;
+}
+input:focus{
+    background-color: green;
+    color: black;
+    border: purple 5px double;
+}
+cite:lang(en){
+    color: red;
+}
+cite:lang(es){
+    color: blue;
+}
+p.andorra::first-line{
+    color: red;
+    background-color: aqua;
+}
+p.andorra::first-letter{
+    color: chartreuse;
+    font-style: oblique;
+    
+}
